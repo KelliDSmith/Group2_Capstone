@@ -133,6 +133,15 @@ textarea, label {
   height: calc(100vh - 4px);
 }
 
+.pt-table2 {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  /* height: -moz-calc(100vh - 4px);
+  height: calc(100vh - 4px); */
+}
+
+
 .pt-tablecell {
   display: table-cell;
   vertical-align: middle;
@@ -275,6 +284,7 @@ textarea, label {
 .page-title {
   margin-bottom: 75px;
 }
+
 .page-title img {
   margin-bottom: 20px;
 }
@@ -290,6 +300,41 @@ textarea, label {
   font-size: 16px;
 }
 .page-title .title-bg {
+  color: rgba(30, 37, 48, 0.07);
+  font-size: 158px;
+  left: 0;
+  letter-spacing: 10px;
+  line-height: 0.7;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -1;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.page-title2 {
+  margin-bottom: 25px;
+}
+
+.page-title2 img {
+  margin-bottom: 20px;
+}
+.page-title2 h2 {
+  font-size: 68px;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.page-title2 p {
+  font-size: 16px;
+}
+.page-title2 .title-bg {
   color: rgba(30, 37, 48, 0.07);
   font-size: 158px;
   left: 0;
@@ -339,6 +384,7 @@ textarea, label {
 }
 
 .page-nav {
+  /* margin-top: 10px; */
   bottom: 40px;
   left: 0;
   position: absolute;
@@ -770,7 +816,7 @@ textarea, label {
 
 .history-scroller {
   padding-top: 82px;
-  max-height: 377px;
+  max-height: 800px;
 }
 
 .history-item {
@@ -1592,4 +1638,32 @@ textarea, label {
   .contact-form .input-field.name {
     margin-right: 0;
   }
+}
+
+/*------------------------------------------------
+    Works Cited
+-------------------------------------------------*/
+
+.works-cited .block {
+  display: inline-block;
+  background: #1e2530;
+  width: 350px;
+  height: 250px;
+  padding: 20px;
+  border: 1px solid #8624f5; 
+  color: #fff;
+}
+
+.works-cited .block i {
+  font-size: 30px;
+}
+
+.works-cited .block h3 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.works-cited .block ul li {
+  margin-bottom: 6px;
+  color: #f9f9f9;
 }
