@@ -1,0 +1,114 @@
+Year,State,Gender,"Number
+of
+workers
+(in
+thousands)","Median
+weekly
+earnings","Standard
+error
+of
+median"
+2019,United States,Women,52577,$821,3
+2019,Alabama,Women,801,$726,18
+2019,Alaska,Women,108,$878,22
+2019,Arizona,Women,1070,$781,19
+2019,Arkansas,Women,465,$714,18
+2019,California,Women,5818,$911,10
+2019,Colorado,Women,919,$913,20
+2019,Connecticut,Women,596,$972,39
+2019,Delaware,Women,172,$790,16
+2019,District of Columbia,Women,163,"$1,406",45
+2019,Florida,Women,3497,$759,9
+2019,Georgia,Women,1777,$765,16
+2019,Hawaii,Women,227,$847,20
+2019,Idaho,Women,246,$682,14
+2019,Illinois,Women,2084,$886,14
+2019,Indiana,Women,1084,$726,18
+2019,Iowa,Women,573,$770,19
+2019,Kansas,Women,482,$733,17
+2019,Kentucky,Women,654,$724,17
+2019,Louisiana,Women,710,$720,19
+2019,Maine,Women,210,$772,17
+2019,Maryland,Women,1180,"$1,017",30
+2019,Massachusetts,Women,1256,"$1,012",18
+2019,Michigan,Women,1540,$803,18
+2019,Minnesota,Women,934,$909,20
+2019,Mississippi,Women,453,$669,21
+2019,Missouri,Women,1028,$786,18
+2019,Montana,Women,148,$739,14
+2019,Nebraska,Women,332,$786,22
+2019,Nevada,Women,515,$776,15
+2019,New Hampshire,Women,238,$893,19
+2019,New Jersey,Women,1553,$932,18
+2019,New Mexico,Women,293,$717,13
+2019,New York,Women,3188,$895,15
+2019,North Carolina,Women,1711,$770,11
+2019,North Dakota,Women,128,$783,17
+2019,Ohio,Women,1842,$825,16
+2019,Oklahoma,Women,582,$708,16
+2019,Oregon,Women,591,$836,27
+2019,Pennsylvania,Women,2062,$828,12
+2019,Rhode Island,Women,176,$884,31
+2019,South Carolina,Women,873,$733,14
+2019,South Dakota,Women,144,$758,14
+2019,Tennessee,Women,1139,$739,14
+2019,Texas,Women,4548,$772,9
+2019,Utah,Women,404,$755,12
+2019,Vermont,Women,111,$879,18
+2019,Virginia,Women,1464,$928,26
+2019,Washington,Women,1207,$889,24
+2019,West Virginia,Women,262,$715,19
+2019,Wisconsin,Women,934,$832,22
+2019,Wyoming,Women,84,$762,19
+2019,United States,Men,65007,"$1,007",3
+2019,Alabama,Men,972,$950,25
+2019,Alaska,Men,126,"$1,097",39
+2019,Arizona,Men,1388,$996,21
+2019,Arkansas,Men,552,$874,22
+2019,California,Men,7830,"$1,024",13
+2019,Colorado,Men,1230,"$1,057",33
+2019,Connecticut,Men,720,"$1,136",38
+2019,Delaware,Men,195,$954,29
+2019,District of Columbia,Men,155,"$1,550",33
+2019,Florida,Men,3979,$892,12
+2019,Georgia,Men,2095,$950,23
+2019,Hawaii,Men,251,$995,30
+2019,Idaho,Men,367,$919,20
+2019,Illinois,Men,2584,"$1,108",24
+2019,Indiana,Men,1397,$986,20
+2019,Iowa,Men,677,$959,27
+2019,Kansas,Men,579,$945,21
+2019,Kentucky,Men,831,$914,22
+2019,Louisiana,Men,814,$978,29
+2019,Maine,Men,252,$980,33
+2019,Maryland,Men,1301,"$1,142",28
+2019,Massachusetts,Men,1476,"$1,170",20
+2019,Michigan,Men,1931,"$1,010",14
+2019,Minnesota,Men,1127,"$1,104",25
+2019,Mississippi,Men,493,$830,26
+2019,Missouri,Men,1178,"$1,008",24
+2019,Montana,Men,191,$952,21
+2019,Nebraska,Men,391,$940,23
+2019,Nevada,Men,661,$920,19
+2019,New Hampshire,Men,306,"$1,136",31
+2019,New Jersey,Men,1868,"$1,176",23
+2019,New Mexico,Men,371,$891,21
+2019,New York,Men,3712,"$1,068",19
+2019,North Carolina,Men,2019,$920,17
+2019,North Dakota,Men,164,"$1,051",32
+2019,Ohio,Men,2278,"$1,014",17
+2019,Oklahoma,Men,741,$926,22
+2019,Oregon,Men,818,"$1,024",40
+2019,Pennsylvania,Men,2499,"$1,069",18
+2019,Rhode Island,Men,213,"$1,057",57
+2019,South Carolina,Men,979,$953,25
+2019,South Dakota,Men,178,$969,18
+2019,Tennessee,Men,1380,$945,28
+2019,Texas,Men,5913,$954,14
+2019,Utah,Men,664,"$1,014",19
+2019,Vermont,Men,125,"$1,016",34
+2019,Virginia,Men,1811,"$1,139",25
+2019,Washington,Men,1609,"$1,137",22
+2019,West Virginia,Men,327,$875,25
+2019,Wisconsin,Men,1173,"$1,010",24
+2019,Wyoming,Men,113,"$1,051",31
