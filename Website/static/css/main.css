@@ -1671,3 +1671,16 @@ textarea, label {
   margin-bottom: 6px;
   color: #f9f9f9;
 }
+
+/*------------------------------------------------
+    Dashboards
+-------------------------------------------------*/
+/* .tableau */
+.tableauPlaceholder {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.next-page2 {
+  text-align: right;
+}
