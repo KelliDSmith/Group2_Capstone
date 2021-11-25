@@ -41,12 +41,12 @@ p:last-child {
  * Selection color
  */
 ::-moz-selection {
-  background-color: #8424f5;
+  background-color: #8624f5;
   color: #fff;
 }
 
 ::selection {
-  background-color: #8424f5;
+  background-color: #8624f5;
   color: #fff;
 }
 
@@ -95,7 +95,7 @@ textarea, label {
 }
 
 .btn-primary {
-  background-color: #8424f5;
+  background-color: #8624f5;
   border: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -105,7 +105,7 @@ textarea, label {
   text-transform: uppercase;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:focus {
-  background-color: #f9423a;
+  background-color: #8624f5;
 }
 
 .btn-border {
@@ -133,15 +133,6 @@ textarea, label {
   height: calc(100vh - 4px);
 }
 
-.pt-table2 {
-  display: table;
-  width: 100%;
-  height: 100vh;
-  /* height: -moz-calc(100vh - 4px);
-  height: calc(100vh - 4px); */
-}
-
-
 .pt-tablecell {
   display: table-cell;
   vertical-align: middle;
@@ -159,13 +150,9 @@ textarea, label {
   position: relative;
 }
 
-.works-cited section,
-.link:hover {
-  color: #8424f5;
-}
 .primary,
 .link:hover {
-  color: #8424f5;
+  color: #8624f5;
 }
 
 .no-gutter {
@@ -202,7 +189,7 @@ textarea, label {
 }
 
 .nicescroll-cursors {
-  background: #8424f5 !important;
+  background: #8624f5 !important;
 }
 
 .preloader {
@@ -223,7 +210,7 @@ textarea, label {
 }
 
 .loading-mask {
-  background-color: #8424f5;
+  background-color: #8624f5;
   height: 100%;
   left: 0;
   position: absolute;
@@ -274,7 +261,7 @@ textarea, label {
 	Start Styling
 -------------------------------------------------*/
 .site-wrapper {
-  border-top: 4px solid #8424f5;
+  border-top: 4px solid #8624f5;
 }
 
 .page-close {
@@ -288,7 +275,6 @@ textarea, label {
 .page-title {
   margin-bottom: 75px;
 }
-
 .page-title img {
   margin-bottom: 20px;
 }
@@ -304,41 +290,6 @@ textarea, label {
   font-size: 16px;
 }
 .page-title .title-bg {
-  color: rgba(30, 37, 48, 0.07);
-  font-size: 158px;
-  left: 0;
-  letter-spacing: 8px;
-  line-height: 0.7;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  z-index: -1;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.page-title2 {
-  margin-bottom: 25px;
-}
-
-.page-title2 img {
-  margin-bottom: 20px;
-}
-.page-title2 h2 {
-  font-size: 68px;
-  margin-bottom: 25px;
-  position: relative;
-  z-index: 0;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-.page-title2 p {
-  font-size: 16px;
-}
-.page-title2 .title-bg {
   color: rgba(30, 37, 48, 0.07);
   font-size: 158px;
   left: 0;
@@ -377,7 +328,7 @@ textarea, label {
   bottom: 14px;
 }
 .section-title h3::after {
-  background-color: #8424f5;
+  background-color: #8624f5;
   width: 73px;
 }
 .section-title.light h3 {
@@ -388,7 +339,6 @@ textarea, label {
 }
 
 .page-nav {
-  /* margin-top: 10px; */
   bottom: 40px;
   left: 0;
   position: absolute;
@@ -458,7 +408,7 @@ textarea, label {
 }
 .hexagon-item:hover .hex-item div::before,
 .hexagon-item:hover .hex-item div::after {
-  background-color: #8424f5;
+  background-color: #8624f5;
 }
 .hexagon-item:hover .hex-content svg {
   -webkit-transform: scale(0.97);
@@ -692,7 +642,7 @@ textarea, label {
   flex-grow: 1;
 }
 .progress .bar {
-  background-color: #8424f5;
+  background-color: #8624f5;
   border-radius: 10px;
   height: 8px;
   width: 0;
@@ -719,8 +669,8 @@ textarea, label {
   border-bottom: 2px solid transparent;
 }
 .filter .active {
-  color: #8424f5;
-  border-bottom-color: #8424f5;
+  color: #8624f5;
+  border-bottom-color: #8624f5;
 }
 
 .works-item {
@@ -774,7 +724,7 @@ textarea, label {
   transform: translate3d(0px, 0px, 0px) scale(0);
 }
 .works-item h4 {
-  color: #8424f5;
+  color: #8624f5;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -820,7 +770,7 @@ textarea, label {
 
 .history-scroller {
   padding-top: 82px;
-  max-height: 800px;
+  max-height: 377px;
 }
 
 .history-item {
@@ -960,7 +910,7 @@ textarea, label {
   transform: scale(1.5);
 }
 .service-hex:hover .st1 {
-  fill: #8424f5;
+  fill: #8624f5;
 }
 .service-hex:hover .content {
   width: 135%;
@@ -1025,7 +975,7 @@ textarea, label {
   transition: all 0.3s ease 0s;
 }
 .testimonials .owl-dot.active {
-  border-color: #8424f5;
+  border-color: #8624f5;
 }
 
 .tm-hex {
@@ -1153,13 +1103,13 @@ textarea, label {
   transform: translate(-50%, -50%);
 }
 .contact-social li:hover span {
-  background-color: #8424f5;
+  background-color: #8624f5;
 }
 .contact-social li:hover span::before {
-  border-bottom-color: #8424f5;
+  border-bottom-color: #8624f5;
 }
 .contact-social li:hover span::after {
-  border-top-color: #8424f5;
+  border-top-color: #8624f5;
 }
 
 .contact-social-hex {
@@ -1195,10 +1145,10 @@ textarea, label {
   border-top: 12.41px solid #1e2530;
 }
 .contact-social-hex:hover::after {
-  border-bottom-color: #8424f5;
+  border-bottom-color: #8624f5;
 }
 .contact-social-hex:hover::before {
-  border-top-color: #8424f5;
+  border-top-color: #8624f5;
 }
 
 .contact-form .input-field {
@@ -1260,7 +1210,7 @@ textarea, label {
 }
 
 .msg-success {
-  color: #FA6862;
+  color: #8624f5;
 }
 
 .pt-table.desktop-768 .pt-tablecell {
@@ -1364,7 +1314,7 @@ textarea, label {
 
 .color-options li {
   display: inline-block;
-  background-color: #e6ae03;
+  background-color: #8624f5;
   height: 30px;
   margin-bottom: 10px;
   margin-right: 6px;
@@ -1378,15 +1328,15 @@ textarea, label {
 }
 
 .color-options li.c1 {
-  background-color: #1fc3aa;
+  background-color: #8624f5;
 }
 
-/* .color-options li.c2 {
-  background-color: #86A438;
+.color-options li.c2 {
+  background-color: #8624f5;
 }
 
 .color-options li.c3 {
-  background-color: #F3A36D; */
+  background-color: #8624f5;
 }
 
 .pattern-options li {
@@ -1644,6 +1594,9 @@ textarea, label {
   }
 }
 
+
+
+
 /*------------------------------------------------
     Works Cited
 -------------------------------------------------*/
@@ -1683,4 +1636,101 @@ textarea, label {
 
 .next-page2 {
   text-align: right;
+}
+
+/*------------------------------------------------
+    Calculator
+-------------------------------------------------*/
+
+.contact-form .input-field {
+  margin-bottom: 10px;
+}
+.contact-form .input-field {
+  margin-right: 5px;
+}
+.contact-form .input-field #age{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* .contact-form .input-field.name {
+  margin-right: 0;
+} */
+
+.input-field select{
+  background-color: #1e2530;
+  color: #bcbcbc;
+  border: 0 none;
+  border-radius: 3px;
+  /* width: 200px; */
+  height: 40px;
+  /* padding-left: 10px; */
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+/* .input-field .form-control:focus {
+  box-shadow: 10px 5px 5px darkslategray;;
+  color: #fff;
+} */
+/* .contact-form textarea.form-control {
+  border-radius: 3px;
+  height: 120px;
+  padding: 15px 10px 15px 70px;
+} */
+/* .contact-form .message .input-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+} */
+
+/* .input-field label {
+  color: #bcbcbc;
+  border: 0 none;
+  border-radius: 3px;
+  height: 100%;
+  padding-left: 10px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  /* font-weight: bold; */
+} */
+
+
+/*------------------------------------------------
+    Custome Page
+-------------------------------------------------*/
+
+.page-title2 {
+  margin-bottom: 25px;
+}
+
+.page-title2 img {
+  margin-bottom: 20px;
+}
+.page-title2 h2 {
+  font-size: 68px;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.page-title2 p {
+  font-size: 16px;
+}
+.page-title2 .title-bg {
+  color: rgba(30, 37, 48, 0.07);
+  font-size: 158px;
+  left: 0;
+  letter-spacing: 10px;
+  line-height: 0.7;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -1;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }

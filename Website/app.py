@@ -58,6 +58,22 @@ def aboutus():
     # Return template and data
     return render_template("7aboutus.html")
 
+    # gender, education, seniority, jobTitle, dpt
+
+@app.route("/makePredictions", methods=["POST"])
+def makePredictions():
+    content = request.json["data"]
+
+    # parse
+    gender = int(content["gender"])
+    age = int(content["age"])
+    seniority = int(content["seniority"])
+    jobTitle = content["job_title"]
+    dpt = content["department"]
+
+    predictions = modelHelper.makePredictions(gender, age, seniority, jobTitle, dpt)
+    print(predictions)
+    return(jsonify({"ok": True, "prediction": str(predictions)}))
 
 @app.after_request
 def add_header(r):

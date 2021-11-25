@@ -8,43 +8,35 @@ class ModelHelper():
     def __init__(self):
         pass
 
-    def makePredictions(self, sex_flag, age, fare, familySize, pclass, embarked):
-        pclass_1 = 0
-        pclass_2 = 0
-        pclass_3 = 0
-
-        embarked_c = 0
-        embarked_q = 0
-        embarked_s = 0
-
-        # parse pclass
-        if (pclass == 1):
-            pclass_1 = 1
-        elif (pclass == 2):
-            pclass_2 = 1
-        elif (pclass == 3):
-            pclass_3 = 1
-        else:
-            pass
-
-        # parse embarked
-        if (embarked == "C"):
-            embarked_c = 1
-        elif (embarked == "Q"):
-            embarked_q = 1
-        elif (embarked == "S"):
-            embarked_s = 1
-        else:
-            pass
-
-        input_pred = [[sex_flag, age, fare, familySize, pclass_1, pclass_2, pclass_3, embarked_c, embarked_q, embarked_s]]
+    def makePredictions(gender, education, seniority, jobTitle, dpt):
+        features_np = ['Gender', 'Education', 'Seniority', 'JobTitle_Data Scientist',
+        'JobTitle_Driver', 'JobTitle_Financial Analyst',
+        'JobTitle_Graphic Designer', 'JobTitle_IT', 'JobTitle_Manager',
+        'JobTitle_Marketing Associate', 'JobTitle_Sales Associate',
+        'JobTitle_Software Engineer', 'JobTitle_Warehouse Associate',
+        'Dept_Administration', 'Dept_Engineering', 'Dept_Management',
+        'Dept_Operations', 'Dept_Sales']
+        user_input = np.zeros(len(features_np))
+        user_input2 = np.zeros(len(features_np))
+        
+        job_idx = features_np.index(f'JobTitle_{jobTitle}')
+        dept_idx = features_np.index(f'Dept_{dpt}')
 
 
+        user_input[0] = gender
+        user_input[1] = education
+        user_input[2] = seniority
+        user_input[job_idx] = 1
+        user_input[dept_idx] = 1
+
+        user_input2[0] = 1 if gender == 0 else 0
+        user_input2[1] = education
+        user_input2[2] = seniority
+        user_input2[job_idx] = 1
+        user_input2[dept_idx] = 1
+        
         filename = 'finalized_model.sav'
-        ada_load = pickle.load(open(filename, 'rb'))
-
-        X = np.array(input_pred)
-        preds = ada_load.predict_proba(X)
-        preds_singular = ada_load.predict(X)
-
-        return preds_singular[0]
+        reg_load = pickle.load(open(filename, 'rb'))
+        
+        preds = reg_load.predict([user_input, user_input2])
+        return preds
