@@ -1,7 +1,7 @@
 $(document).ready(function() {
     console.log("Page Loaded");
 
-    $("#filter").click(function() {
+    $(".filter").click(function() {
         makePredictions();
     });
 });
@@ -32,11 +32,11 @@ function makePredictions() {
             // print it
             console.log(returnedData);
 
-            // if (returnedData["prediction"] == 1) {
-            //     $("#output").text("You Survived!");
-            // } else {
-            //     $("#output").text("You Died!");
-            // }
+            if (returnedData["prediction"] > 1) {
+                $("#output").text("You Survived!");
+            } else {
+                $("#output").text("You Died!");
+            }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
             alert("Status: " + textStatus);

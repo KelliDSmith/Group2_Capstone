@@ -3,7 +3,7 @@ import json
 import pandas as pd
 import numpy as np
 import os
-# from modelHelper import ModelHelper
+from modelHelper import ModelHelper
 
 #init app and class
 app = Flask(__name__)
@@ -68,7 +68,7 @@ def makePredictions():
     gender = int(content["gender"])
     age = int(content["age"])
     seniority = int(content["seniority"])
-    jobTitle = content["job_title"]
+    jobTitle = content["jobTitle"]
     dpt = content["department"]
 
     predictions = modelHelper.makePredictions(gender, age, seniority, jobTitle, dpt)

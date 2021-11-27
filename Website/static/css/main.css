@@ -1151,57 +1151,7 @@ textarea, label {
   border-top-color: #8624f5;
 }
 
-.contact-form .input-field {
-  margin-bottom: 10px;
-}
-.contact-form .input-field.name {
-  margin-right: 5px;
-}
-.contact-form .input-field.email {
-  margin-left: 5px;
-}
-.contact-form .input-field label.error {
-  color: #ff0000;
-  font-size: 13px;
-  margin: 0;
-}
-.contact-form .input-icon {
-  background-color: #1e2530;
-  border-radius: 3px 0 0 3px;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  line-height: 48px;
-  min-width: 53px;
-  text-align: center;
-  left: 0;
-  line-height: 48px;
-  min-width: 53px;
-  position: absolute;
-  top: 0;
-}
-.contact-form .form-control {
-  background-color: #1e2530;
-  color: #bcbcbc;
-  border: 0 none;
-  border-radius: 3px;
-  height: 48px;
-  padding-left: 70px;
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
-}
-.contact-form .form-control:focus {
-  box-shadow: none;
-  color: #fff;
-}
-.contact-form textarea.form-control {
-  border-radius: 3px;
-  height: 120px;
-  padding: 15px 10px 15px 70px;
-}
-.contact-form .message .input-icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
+
 
 .msg-success,
 .msg-failed {
@@ -1589,10 +1539,7 @@ textarea, label {
     padding: 20px;
   }
 
-  .contact-form .input-field.name {
-    margin-right: 0;
-  }
-}
+
 
 
 
@@ -1629,9 +1576,10 @@ textarea, label {
     Dashboards
 -------------------------------------------------*/
 /* .tableau */
+}
 .tableauPlaceholder {
-  padding-right: 100px;
-  padding-left: 100px;
+  padding-right: 200px;
+  padding-left: 200px;
 }
 
 .next-page2 {
@@ -1642,20 +1590,6 @@ textarea, label {
     Calculator
 -------------------------------------------------*/
 
-.contact-form .input-field {
-  margin-bottom: 10px;
-}
-.contact-form .input-field {
-  margin-right: 5px;
-}
-.contact-form .input-field #age{
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* .contact-form .input-field.name {
-  margin-right: 0;
-} */
 
 .input-field select{
   background-color: #1e2530;
@@ -1668,32 +1602,58 @@ textarea, label {
   width: 100%;
   font-family: "Open Sans", sans-serif;
 }
-/* .input-field .form-control:focus {
-  box-shadow: 10px 5px 5px darkslategray;;
-  color: #fff;
-} */
-/* .contact-form textarea.form-control {
-  border-radius: 3px;
-  height: 120px;
-  padding: 15px 10px 15px 70px;
-} */
-/* .contact-form .message .input-icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-} */
 
-/* .input-field label {
+.input-field input{
+  background-color: #1e2530;
   color: #bcbcbc;
   border: 0 none;
   border-radius: 3px;
-  height: 100%;
-  padding-left: 10px;
+  /* width: 200px; */
+  height: 40px;
+  /* padding-left: 10px; */
   width: 100%;
   font-family: "Open Sans", sans-serif;
-  font-size: 30px;
-  /* font-weight: bold; */
-} */
+}
+
+.prediction h3 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.prediction .result {
+  border: 4px solid #1fc3aa;
+  border-radius: 5px;
+  font-size: 36px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.page-title p {
+  font-size: 16px;
+}
+.page-title .title-bg {
+  color: rgba(30, 37, 48, 0.07);
+  font-size: 158px;
+  left: 0;
+  letter-spacing: 10px;
+  line-height: 0.7;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -1;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 
 
 /*------------------------------------------------
