@@ -8,7 +8,7 @@ class ModelHelper():
     def __init__(self):
         pass
 
-    def makePredictions(gender, age, seniority, jobTitle, dpt):
+    def makePredictions(self,gender, age,seniority, jobTitle, dpt):
         features_np = ['Gender', 'Age', 'Seniority', 'JobTitle_Data Scientist',
             'JobTitle_Driver', 'JobTitle_Financial Analyst',
             'JobTitle_Graphic Designer', 'JobTitle_IT', 'JobTitle_Manager',

@@ -1,7 +1,7 @@
 $(document).ready(function() {
     console.log("Page Loaded");
 
-    $(".filter").click(function() {
+    $("#filter").click(function() {
         makePredictions();
     });
 });
@@ -10,7 +10,7 @@ function makePredictions() {
     var gender = $("#gender").val();
     var age = $("#age").val();
     var seniority = $("#seniority").val();
-    var jobTitle = $("#job_title").val();
+    var jobTitle = $("#jobTitle").val();
     var dpt = $("#department").val();
  
     // create the payload
@@ -18,7 +18,7 @@ function makePredictions() {
         "gender": gender,
         "age": age,
         "seniority": seniority,
-        "job_title": jobTitle,
+        "jobTitle": jobTitle,
         "department": dpt,
     }
 
@@ -32,11 +32,7 @@ function makePredictions() {
             // print it
             console.log(returnedData);
 
-            if (returnedData["prediction"] > 1) {
-                $("#output").text("You Survived!");
-            } else {
-                $("#output").text("You Died!");
-            }
+            // buildBarPlot (returnedData);
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
             alert("Status: " + textStatus);
@@ -44,4 +40,42 @@ function makePredictions() {
         }
     });
 
+    // function buildBarPlot (returnedData) {
+    //     // let curr_id = $("#selDataset").val();
+    //     // let curr_data = data.samples.filter(x => x.id === curr_id)[0];
+    //     let yvalues = ['male']
+    
+    //     let trace1 = {
+    //         x: returnedData.prediction[0],
+    //         y: yvalues,
+    //         text: yvalues,
+    //         name: "Bacteria Count",
+    //         type: 'bar',
+    //         orientation: 'h',
+    //         marker: {
+    //             color: 'maroon'
+    //         }
+    //     }
+    
+    //     let traces = [trace1];
+    
+    //     let layout = {
+    //         autosize: true,
+    //         // width: 850,
+    //         // height: 600,
+    //         title: "Bacteria Count in Belly Button",
+    //         xaxis: {
+    //             title: "Number of Bacteria"
+    //         },
+    //         yaxis: {
+    //             tickfont: {
+    //                 size: 10,
+    //                 color: 'black'
+    //             }
+    //         }
+    //     };
+    
+    //     Plotly.newPlot('bar', traces, layout);
+    
+    // }
 }

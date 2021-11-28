@@ -8,7 +8,7 @@ from modelHelper import ModelHelper
 #init app and class
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
-# modelHelper = ModelHelper()
+modelHelper = ModelHelper()
 
 # Route to render index.html template
 @app.route("/")
@@ -62,6 +62,7 @@ def aboutus():
 
 @app.route("/makePredictions", methods=["POST"])
 def makePredictions():
+    print('postrequest')
     content = request.json["data"]
 
     # parse
@@ -73,7 +74,7 @@ def makePredictions():
 
     predictions = modelHelper.makePredictions(gender, age, seniority, jobTitle, dpt)
     print(predictions)
-    return(jsonify({"ok": True, "prediction": str(predictions)}))
+    return(jsonify({"ok": True, "gender": gender,"prediction": predictions.tolist()}))
 
 @app.after_request
 def add_header(r):
