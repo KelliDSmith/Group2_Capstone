@@ -32,7 +32,9 @@ function makePredictions() {
             // print it
             console.log(returnedData);
 
-            // buildBarPlot (returnedData);
+       
+
+            publishPreds (returnedData);
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
             alert("Status: " + textStatus);
@@ -40,42 +42,30 @@ function makePredictions() {
         }
     });
 
-    // function buildBarPlot (returnedData) {
-    //     // let curr_id = $("#selDataset").val();
-    //     // let curr_data = data.samples.filter(x => x.id === curr_id)[0];
-    //     let yvalues = ['male']
-    
-    //     let trace1 = {
-    //         x: returnedData.prediction[0],
-    //         y: yvalues,
-    //         text: yvalues,
-    //         name: "Bacteria Count",
-    //         type: 'bar',
-    //         orientation: 'h',
-    //         marker: {
-    //             color: 'maroon'
-    //         }
-    //     }
-    
-    //     let traces = [trace1];
-    
-    //     let layout = {
-    //         autosize: true,
-    //         // width: 850,
-    //         // height: 600,
-    //         title: "Bacteria Count in Belly Button",
-    //         xaxis: {
-    //             title: "Number of Bacteria"
-    //         },
-    //         yaxis: {
-    //             tickfont: {
-    //                 size: 10,
-    //                 color: 'black'
-    //             }
-    //         }
-    //     };
-    
-    //     Plotly.newPlot('bar', traces, layout);
-    
-    // }
+    function publishPreds (returnedData) {
+
+        // empty the div
+        $("#pred1").empty();
+        $("#pred2").empty();
+
+        let pred1 = Math.round(returnedData.prediction[0]);
+        let pred2 = Math.round(returnedData.prediction[1]);
+
+        //if male
+        if (returnedData.gender == 0) {
+            
+            let malepred = `<h1 id=male><i class="tf-profile-male">$${pred1}</h1>`;
+            let femalepred = `<h1 id=female><i class="tf-profile-female">$${pred2}</h1>`;
+            $("#pred1").append(malepred);
+            $("#pred2").append(femalepred);
+        
+        // if female
+        } else {
+
+            let femalepred = `<h1 id=female><i class="tf-profile-female"> $${pred1}</h1>`;
+            let malepred = `<h1 id=male><i class="tf-profile-male"> $${pred2}</h1>`;
+            $("#pred1").append(femalepred);
+            $("#pred2").append(malepred);
+        }
+    }
 }

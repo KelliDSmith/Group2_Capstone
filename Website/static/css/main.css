@@ -1654,7 +1654,27 @@ textarea, label {
   transform: translateY(-50%);
 }
 
+#male {
+  font-size: 48px;
+  color: #1fc3aa;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
 
+#female {
+  font-size: 48px;
+  color: #8624f5;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 /*------------------------------------------------
     Custome Page
@@ -1694,3 +1714,8 @@ textarea, label {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+/*------------------------------------------------
+    Hex Testing
+-------------------------------------------------*/
+
