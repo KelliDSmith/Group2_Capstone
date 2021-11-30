@@ -47,6 +47,7 @@ function makePredictions() {
         // empty the div
         $("#pred1").empty();
         $("#pred2").empty();
+        $("#pred2title").empty();
 
         let pred1 = Math.round(returnedData.prediction[0]);
         let pred2 = Math.round(returnedData.prediction[1]);
@@ -56,16 +57,20 @@ function makePredictions() {
             
             let malepred = `<h1 id=male><i class="tf-profile-male">$${pred1}</h1>`;
             let femalepred = `<h1 id=female><i class="tf-profile-female">$${pred2}</h1>`;
+            let pred2title = "A Female Would Make"
             $("#pred1").append(malepred);
             $("#pred2").append(femalepred);
+            $("#pred2title").append(pred2title)
         
         // if female
         } else {
 
             let femalepred = `<h1 id=female><i class="tf-profile-female"> $${pred1}</h1>`;
             let malepred = `<h1 id=male><i class="tf-profile-male"> $${pred2}</h1>`;
+            let pred2title = "A Male Would Make"
             $("#pred1").append(femalepred);
             $("#pred2").append(malepred);
+            $("#pred2title").append(pred2title)
         }
     }
 }

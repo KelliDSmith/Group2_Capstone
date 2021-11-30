@@ -1547,7 +1547,7 @@ textarea, label {
 /*------------------------------------------------
     Works Cited
 -------------------------------------------------*/
-
+}
 .works-cited .block {
   display: inline-block;
   background: #1e2530;
@@ -1576,7 +1576,7 @@ textarea, label {
     Dashboards
 -------------------------------------------------*/
 /* .tableau */
-}
+
 .tableauPlaceholder {
   padding-right: 200px;
   padding-left: 200px;
@@ -1677,18 +1677,18 @@ textarea, label {
 }
 
 /*------------------------------------------------
-    Custome Page
+    Custom Page
 -------------------------------------------------*/
 
 .page-title2 {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .page-title2 img {
   margin-bottom: 20px;
 }
 .page-title2 h2 {
-  font-size: 68px;
+  font-size: 48px;
   margin-bottom: 25px;
   position: relative;
   z-index: 0;
